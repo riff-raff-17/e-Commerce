@@ -14,7 +14,7 @@
 
 <script>
 // Set your Stripe secret key
-const stripe = require('stripe')('sk_test_51Ms227LfxyAuh2jJRfDfCelhSrQQR2EudeJfhAq3ANnQs3VfifRWN5HBEImZF5W0VVJTwppLde4DHI3HrqK5kPb900zimxo6R1');
+const stripe = require('stripe')('');
 
 // Retrieve a list of successful payments
 stripe.paymentIntents.list({status: 'succeeded'})
