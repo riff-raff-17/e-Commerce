@@ -1,0 +1,39 @@
+<!-- HTML table to display payment history -->
+<table id="payment-history">
+    <thead>
+      <tr>
+        <th>Payment ID</th>
+        <th>Date</th>
+        <th>Amount</th>
+        <th>Customer Name</th>
+      </tr>
+    </thead>
+    <tbody id="payment-list">
+    </tbody>
+</table>
+
+<script>
+// Set your Stripe secret key
+const stripe = require('stripe')('sk_test_51Ms227LfxyAuh2jJRfDfCelhSrQQR2EudeJfhAq3ANnQs3VfifRWN5HBEImZF5W0VVJTwppLde4DHI3HrqK5kPb900zimxo6R1');
+
+// Retrieve a list of successful payments
+stripe.paymentIntents.list({status: 'succeeded'})
+  .then(function (payments) {
+    // Loop through the payments and create HTML elements to display the data
+    const paymentList = document.getElementById('payment-list');
+
+    payments.data.forEach(payment => {
+      const paymentItem = document.createElement('tr');
+      paymentItem.innerHTML = `
+        <td>${payment.id}</td>
+        <td>${new Date(payment.created * 1000)}</td>
+        <td>${payment.amount} ${payment.currency}</td>
+        <td>${payment.metadata.customer_name}</td>
+      `;
+      paymentList.appendChild(paymentItem);
+    });
+  })
+  .catch(function (err) {
+    console.log('Error retrieving payments:', err);
+  });
+</script>

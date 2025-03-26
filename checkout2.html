@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scal=1.0">
+    <title> SE E-commerce platform</title>
+    <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"></script>
+    <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css"
+</head>
+
+<body>
+
+<section id="header"> 
+        <a href="#"><img src="img/logo.png" class="logo" alt=""></a>
+
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a class="active" href="cart.html"><i class="fa fa-shopping-cart" ></i></a></li>
+                <li><a href="login.html">Account  <i class="fa fa-solid fa-user"></i></a></li>
+            </ul>
+        </div>
+
+    </section>
+<section id="page-header-cart" class="cart-header">
+    <h2>#Checkout</h2>
+    <p>See your products</p>
+</section>
+
+<div class="roww">
+    <div class="ccol-75">
+      <div class="ccontainer">
+        <form action="/action_page.php">
+  
+          <div class="rrow">
+            <div class="ccol-50">
+              <h3>Billing Address</h3>
+              <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+              <input type="text" id="fname" name="firstname" placeholder="Name">
+              <label for="email"><i class="fa fa-envelope"></i> Email</label>
+              <input type="text" id="email" name="email" placeholder="Email">
+              <label for="adr"></i> Address</label>
+              <input type="text" id="adr" name="address">
+              <label for="city"> City</label>
+              <input type="text" id="city" name="city" placeholder="City">
+  
+              <div class="rrow">
+                <div class="ccol-50">
+                  <label for="state">State</label>
+                  <input type="text" id="state" name="state" placeholder="State">
+                </div>
+                <div class="ccol-50">
+                  <label for="zip">Zip</label>
+                  <input type="text" id="zip" name="zip" placeholder="ZIP">
+                </div>
+              </div>
+            </div>
+  
+            <div class="ccol-50">
+              <h3>Payment</h3>
+              <label for="fname">Accepted Cards</label>
+              <div class="icon-container">
+                <i class="bx bxl-visa bx-tada" style="color:rgb(114, 114, 229);" ></i>
+                <i class="bx bxs-credit-card bx-tada" style="color:blue;"></i>
+                <i class="bx bxl-mastercard bx-tada" style="color:red;"></i>
+              </div>
+              <label for="cname">Name on Card</label>
+              <input type="text" id="cname" name="cardname" placeholder="Name">
+              <label for="ccnum">Credit card number</label>
+              <input type="text" id="ccnum" name="cardnumber" placeholder="XXXX XXXX XXXX XXXX">
+              <label for="expmonth">Exp Month</label>
+              <input type="text" id="expmonth" name="expmonth">
+  
+              <div class="rrow">
+                <div class="ccol-50">
+                  <label for="expyear">Exp Year</label>
+                  <input type="text" id="expyear" name="expyear">
+                </div>
+                <div class="ccol-50">
+                  <label for="cvv">CVV</label>
+                  <input type="text" id="cvv" name="cvv">
+                </div>
+              </div>
+            </div>
+  
+          </div>
+          <label>
+            <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+          </label>
+          <input type="submit" value="Continue to checkout" class="btn">
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+<footer class="section-p1">
+    <div class="col">
+        <img class="logo" src="img/logo.png" alt="">
+        <h4>Contact</h4>
+        <p><strong>Address:</strong> Camelot</p>
+        <p><strong>Phone:</strong> 1-800-Swords</p>
+        <p><strong>Hours:</strong> 10-12pm on the eve of a lunar eclipse</p>
+        <div class="follow">
+            <h4>Follow us</h4>
+            <div class="icon">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-youtube"></i>
+            </div>
+        </div>
+    </div>
+
+    <div class="col">
+        <h4>About</h4>
+        <a href="#">About Us</a>
+        <a href="#">Delivery</a>
+        <a href="#">Privacy</a>
+        <a href="#">Terms & Conditions</a>
+        <a href="#">Contact Us</a>
+    </div>
+
+    <div class="col">
+        <h4>My Account</h4>
+        <a href="#">Sign In</a>
+        <a href="#">View Cart</a>
+        <a href="#">My Wishlist</a>
+        <a href="#">Track My Order</a>
+        <a href="#">Help</a>
+    </div>
+
+    <div class="col install">
+        <h4>Install App</h4>
+        <p>From App Store or Google Play</p>
+        <div class="row">
+            <img src="img/app.png" alt="">
+            <img src="img/play.webp" alt="">
+        </div>
+    <div class="col pay">
+        <p>Secured Payment Gateway</p>
+        <img src="img/pay.png" alt="">
+    </div>
+
+    <div class="copyright">
+        <p>© 2023, YSC3232: Software Engineering</p>
+    </div>
+
+</footer>
+<script src="script.js"></script>
+
+
+</body>
+</html>
+
+

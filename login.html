@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scal=1.0">
+    <title> SE E-commerce platform</title>
+    <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"></script>
+    <link rel="stylesheet" href="style.css"
+</head>
+
+<body>
+
+<section id="header"> 
+        <a href="#"><img src="img/logo.png" class="logo" alt=""></a>
+
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="cart.html"><i class="fa fa-shopping-cart" ></i></a></li>
+                <li><a class="active" href="login.html">Account  <i class="fa fa-solid fa-user"></i></a></li>
+            </ul>
+        </div>
+
+    </section>
+
+<div class="container">
+    <div class="login-form">
+      <form action="login.php" method="post">
+        <h1>Login</h1>
+        <p>
+          Already have an account? Login in or
+          <a href="signup.html">Sign Up</a>
+        </p>
+
+        <label for="email">Email</label>
+        <input type="text" placeholder="Enter Email" name="username" required />
+
+        <label for="psw">Password</label>
+        <input
+          type="password"
+          placeholder="Enter Password"
+          name="password"
+          required
+        />
+
+        <label>
+          <input
+            type="checkbox"
+            checked="checked"
+            name="remember"
+            style="margin-bottom: 15px"
+          />
+          Remember me
+        </label>
+
+        <p>
+          By creating an account you agree to our
+          <a href="terms.xml">Terms & Privacy</a>.
+        </p>
+        <div class="buttons">
+          <button class="normal">Cancel</button>
+          <button class="normal">Login</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+
+<section id="newsletter" class="section-p1 section-m1">
+    <div class="newstext">
+        <h4>Sign Up For Newsletters</h4>
+        <p>Get E-mail updates about our latest shop and <span>special offers.</span>
+        </p>
+        <div class="form">
+            <input type="text" placeholder="Your email address">
+            <button class="normal">Sign Up</button>
+        </div>
+    </div>
+</section>
+
+<footer class="section-p1">
+  <div class="col">
+      <img class="logo" src="img/logo.png" alt="">
+      <h4>Contact</h4>
+      <p><strong>Address:</strong> Camelot</p>
+      <p><strong>Phone:</strong> 1-800-Swords</p>
+      <p><strong>Hours:</strong> 10-12pm on the eve of a lunar eclipse</p>
+      <div class="follow">
+          <h4>Follow us</h4>
+          <div class="icon">
+              <i class="fab fa-facebook-f"></i>
+              <i class="fab fa-twitter"></i>
+              <i class="fab fa-instagram"></i>
+              <i class="fab fa-youtube"></i>
+          </div>
+      </div>
+  </div>
+
+  <div class="col">
+      <h4>About</h4>
+      <a href="#">About Us</a>
+      <a href="#">Delivery</a>
+      <a href="#">Privacy</a>
+      <a href="#">Terms & Conditions</a>
+      <a href="#">Contact Us</a>
+  </div>
+
+  <div class="col">
+      <h4>My Account</h4>
+      <a href="#">Sign In</a>
+      <a href="#">View Cart</a>
+      <a href="#">My Wishlist</a>
+      <a href="#">Track My Order</a>
+      <a href="#">Help</a>
+  </div>
+
+  <div class="col install">
+      <h4>Install App</h4>
+      <p>From App Store or Google Play</p>
+      <div class="row">
+          <img src="img/app.png" alt="">
+          <img src="img/play.webp" alt="">
+      </div>
+  <div class="col pay">
+      <p>Secured Payment Gateway</p>
+      <img src="img/pay.png" alt="">
+  </div>
+
+  <div class="copyright">
+      <p>© 2023, YSC3232: Software Engineering</p>
+  </div>
+
+</footer>
+<script src="script.js"></script>
+
+
+</body>
+</html>
